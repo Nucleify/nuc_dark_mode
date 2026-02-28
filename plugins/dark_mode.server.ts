@@ -1,6 +1,6 @@
 import { defineNuxtPlugin, useHead } from 'nuxt/app'
 
-const DARK_MODE_SCRIPT = `(function(){try{if(document.cookie.match(/(?:^|;\\s*)nuc-dark-mode=true/)){document.documentElement.classList.add('p-dark')}}catch(e){}})()`
+const DARK_MODE_SCRIPT = `(function(){try{var m=document.cookie.match(/(?:^|;\\s*)nuc-dark-mode=([^;]*)/);if(m&&m[1]==='false'){document.documentElement.classList.remove('p-dark')}else{document.documentElement.classList.add('p-dark')}}catch(e){}})()`
 
 export default defineNuxtPlugin(() => {
   if (import.meta.server) {
