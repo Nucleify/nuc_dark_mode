@@ -3,6 +3,7 @@ import type { Ref } from 'vue'
 import { watch } from 'vue'
 
 import type { UseDarkModeInterface } from '../types'
+
 import { applyDarkMode } from './apply_dark_mode'
 
 const COOKIE_KEY = 'nuc-dark-mode'
