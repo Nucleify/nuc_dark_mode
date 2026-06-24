@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { useDarkMode } from '../../utils'
+import { useDarkMode } from 'nucleify'
 
 const { isDark, toggleDarkMode } = useDarkMode()
 </script>

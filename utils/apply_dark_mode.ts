@@ -1,7 +1,7 @@
 const DARK_CLASS = 'p-dark'
 
 export function applyDarkMode(value: boolean): void {
-  if (import.meta.server) return
+  if (typeof window === 'undefined') return
 
   const html = document.documentElement
   if (value) {

@@ -2,9 +2,8 @@ import { useCookie } from 'nuxt/app'
 import type { Ref } from 'vue'
 import { watch } from 'vue'
 
-import type { UseDarkModeInterface } from '../types'
-
-import { applyDarkMode } from './apply_dark_mode'
+import type { UseDarkModeInterface } from 'nucleify'
+import { applyDarkMode } from 'nucleify'
 
 const COOKIE_KEY = 'nuc-dark-mode'
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365

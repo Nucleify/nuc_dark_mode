@@ -1,9 +1,7 @@
 import { defineNuxtPlugin } from 'nuxt/app'
 import type { App } from 'vue'
 
-import { NucDarkModeToggler } from '.'
-
-import { darkModeServerPlugin } from './plugins'
+import { darkModeServerPlugin, NucDarkModeToggler } from 'nucleify'
 
 export function registerNucDarkMode(app: App<Element>): void {
   app
