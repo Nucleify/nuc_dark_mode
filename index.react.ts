@@ -1,6 +1,3 @@
-export * from './components/toggler/index.tsx'
-export * from './plugins/dark_mode.server.tsx'
 export * from './types/interfaces.react'
 export * from './utils/apply_dark_mode'
-export * from './utils/load_preference.react'
 export * from './utils/use_dark_mode.react'
